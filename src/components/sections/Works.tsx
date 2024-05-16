@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom"; // Import Link component
-
-import { github } from "../../assets";
+import { Link } from "react-router-dom"; 
 import { SectionWrapper } from "../../hoc";
 import { projects } from "../../constants";
 import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
-import { TProject } from "../../types";
 
 const ProjectCard: React.FC<{ index: number; toggle: string }> = ({
   index,
@@ -20,7 +17,7 @@ const ProjectCard: React.FC<{ index: number; toggle: string }> = ({
     return null;
   }
 
-  const { name, description, techs, image, sourceCodeLink } = project;
+  const { name, description, techs, image } = project;
 
   return (
     <Link to={`/projects/${name}`} className="w-auto">
@@ -39,21 +36,7 @@ const ProjectCard: React.FC<{ index: number; toggle: string }> = ({
                 alt={name}
                 className="h-full w-full rounded-t-xl object-cover"
               />
-              <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
-                <div
-                  onClick={(e) => {
-                    e.stopPropagation(); // Prevent link navigation on click of the source code link
-                    window.open(sourceCodeLink, "_blank");
-                  }}
-                  className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
-                >
-                  <img
-                    src={github}
-                    alt="github"
-                    className="h-1/2 w-1/2 object-contain"
-                  />
-                </div>
-              </div>
+             
             </div>
             <div className="m-5">
               <div className="w-full flex align-center flex-wrap gap-2 my-3">
@@ -78,12 +61,7 @@ const ProjectCard: React.FC<{ index: number; toggle: string }> = ({
 };
 
 const Works = () => {
-  const [toggle, setToggle] = useState("All");
-  const categories = ["All",...new Set(projects.map((project) => project.category))];
-
-  const handleToggle = (category) => {
-    setToggle(category);
-  };
+  const [toggle] = useState("All");
   // const filteredProjects =
   // toggle === "All"
   //   ? projects
@@ -103,7 +81,7 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-      {projects.map((project, index) => (
+      {projects.map((_, index) => (
           <ProjectCard
             key={`project-${index}`}
             index={index}
