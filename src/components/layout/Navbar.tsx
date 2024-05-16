@@ -6,9 +6,13 @@ import { menu, close } from "../../assets";
 import { config } from "../../constants/config";
 
 const Navbar = () => {
-  const [active, setActive] = useState<string | null>();
+  const [active, setActive] = useState<string | null>(null);
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  if (active) {
+    
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,7 +21,7 @@ const Navbar = () => {
         setScrolled(true);
       } else {
         setScrolled(false);
-        setActive("");
+        setActive(null);
       }
     };
 
