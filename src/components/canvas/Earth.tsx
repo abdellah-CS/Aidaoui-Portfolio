@@ -1,4 +1,3 @@
-import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
