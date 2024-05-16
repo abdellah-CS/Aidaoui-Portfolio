@@ -7,18 +7,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const Hero = () => {
   return (
     <div className="relative">
-  <video
-      className="absolute top-0 left-0 w-full h-full object-cover"
-      autoPlay
-      loop
-      muted
-      style={{
-        filter: "brightness(200%)",
-        
-      }}
-    ><source src="/src/assets/bg-video.mp4" type="video/mp4" />
-</video>
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-primary opacity-50"></div>
       <div className="relative z-10"></div>
       <section className={`relative mx-auto h-screen w-full`}>
         <div className={`absolute inset-0 top-[120px] mx-auto max-w-7xl ${styles.paddingX} flex flex-row items-start gap-5 sm:px-32`}>
