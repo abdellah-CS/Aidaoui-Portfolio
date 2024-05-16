@@ -47,7 +47,7 @@ import {
   homework5, 
   homework6, 
   homework7
-} from "../assets";
+} from "../assets/index";
 
 export const navLinks: TNavLink[] = [
   {
