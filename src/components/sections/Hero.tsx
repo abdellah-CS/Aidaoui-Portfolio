@@ -7,8 +7,16 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const Hero = () => {
   return (
     <div className="relative">
-      <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted style={{filter: 'brightness(200%)', '@media (max-width: 640px)': { filter: 'brightness(343%) !important' } }}>
-  <source src="/src/assets/bg-video.mp4" type="video/mp4" />
+  <video
+      className="absolute top-0 left-0 w-full h-full object-cover"
+      autoPlay
+      loop
+      muted
+      style={{
+        filter: "brightness(200%)",
+        
+      }}
+    ><source src="/src/assets/bg-video.mp4" type="video/mp4" />
 </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
       <div className="relative z-10"></div>
