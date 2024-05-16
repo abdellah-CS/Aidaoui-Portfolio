@@ -54,9 +54,9 @@ const About = () => {
       >
         {config.sections.about.content}
       </motion.p>
-      <Button class="animate-bounce delay-100 font-medium green-pink-gradient shadow-card px-12 py-3 rounded-lg flex mx-auto mt-16" variant="contained" startIcon={<DownloadIcon />}>
+      <button class="animate-bounce delay-100 font-medium green-pink-gradient shadow-card px-12 py-3 rounded-lg flex mx-auto mt-16" variant="contained" startIcon={<DownloadIcon />}>
         <ResumeButton/>
-      </Button>
+      </button>
 
       <div className="mt-20 flex flex-wrap gap-10 max-sm:justify-center">
         {services.map((service, index) => (
