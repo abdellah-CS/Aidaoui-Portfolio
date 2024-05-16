@@ -24,7 +24,7 @@ const Hero = () => {
               {config.hero.p[0]} <br className="hidden sm:block" />
               {config.hero.p[1]}
             </p>
-            <ul className="list-none flex-row ml-4 gap-10 sm:flex my-12">
+            <ul className="list-none flex-row gap-10 sm:flex my-12">
                 <li className="text-white z-20 mb-6 cursor-pointer lg:text-[20px] text-[26px] font-medium hover:text-white">
                   <Link to="/about" className="relative before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-white before:transition-width before:duration-300 before:ease-in-out before:content-[''] block hover:before:w-full">
                     <ArrowForwardIcon />
