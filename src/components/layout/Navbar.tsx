@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import LanguageIcon from '@mui/icons-material/Language';
 import { styles } from "../../constants/styles";
-import { menu, close } from "../../assets";
+import { menu, close } from "../../assets/index";
 import { config } from "../../constants/config";
 
 const Navbar = () => {
