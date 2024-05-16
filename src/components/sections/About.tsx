@@ -2,12 +2,13 @@ import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { services } from "../../constants";
-import { SectionWrapper,  ResumeButton } from "../../hoc";
+import { SectionWrapper, ResumeButton } from "../../hoc";
 import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
-import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
+import Button from '@mui/material/Button';
+
 interface IServiceCard {
   index: number;
   title: string;
@@ -54,9 +55,32 @@ const About = () => {
       >
         {config.sections.about.content}
       </motion.p>
-      <button class="animate-bounce delay-100 font-medium green-pink-gradient shadow-card px-12 py-3 rounded-lg flex mx-auto mt-16" variant="contained" startIcon={<DownloadIcon />}>
-        <ResumeButton/>
-      </button>
+      <Button
+      style={{
+        animationName: "bounce",
+        animationDuration: "0.75s",
+        animationTimingFunction: "ease-in-out",
+        animationDelay: "0.1s",
+        animationIterationCount: "infinite",
+        animationDirection: "alternate",
+        fontWeight: "500",
+        fontSize: "1rem", // Adjust as needed
+        backgroundImage: "-webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%)", // Adjust gradient colors
+        boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.3)", // Adjust shadow properties
+        padding: "0.75rem 1.5rem", // Adjust padding
+        borderRadius: "0.5rem", // Adjust border radius
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "1rem auto",
+        color: "#fff", 
+        marginTop: "30px",
+        WebkitTapHighlightColor: "white",
+      }}
+      startIcon={<DownloadIcon />}
+    >
+      <ResumeButton />
+    </Button>
 
       <div className="mt-20 flex flex-wrap gap-10 max-sm:justify-center">
         {services.map((service, index) => (
@@ -68,3 +92,4 @@ const About = () => {
 };
 
 export default SectionWrapper(About, "about");
+
