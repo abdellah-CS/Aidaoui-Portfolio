@@ -17,7 +17,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
       <h2 className="text-[38px] font-semibold tracking-wider text-white pt-9 pb-3 border-b-2 border-solid border-white">{project.name}</h2>
       <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-8 flex justify-between sm:block">
         <div className="pr-2 sm:pr-0">
-        <table class="table-auto w-full">
+        <table className="table-auto w-full">
           <tbody>
             <tr className="h-16">
               <td><h3 className="text-[26px] font-semibold mb-2">Category</h3></td>
@@ -43,14 +43,18 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
         </div>
         <div className="project-description pr-2  sm:pr-0">
           <p className="text-lg leading-7 text-secondary">{project.description}</p>
-          <Link to={project.websiteLink} className="relative before:absolute mt-5 w-fit before:bottom-0 before:left-0 text-[20px] font-medium before:w-0 before:h-0.5 before:bg-white before:transition-width before:duration-300 tracking-wider before:ease-in-out before:content-[''] block hover:before:w-full">
-            <ArrowForwardIcon />
-            <span> Visit the website</span>
-          </Link>
-          <Link to={project.sourceCodeLink} className="relative before:absolute mt-3 w-fit before:bottom-0 before:left-0 text-[20px] font-medium before:w-0 before:h-0.5 before:bg-white before:transition-width before:duration-300 tracking-wider before:ease-in-out before:content-[''] block hover:before:w-full">
-            <ArrowForwardIcon />
-            <span> Explore Source Code</span>
-          </Link>
+          {project.websiteLink && (
+            <Link to={project.websiteLink} className="relative before:absolute mt-5 w-fit before:bottom-0 before:left-0 text-[20px] font-medium before:w-0 before:h-0.5 before:bg-white before:transition-width before:duration-300 tracking-wider before:ease-in-out before:content-[''] block hover:before:w-full">
+              <ArrowForwardIcon />
+              <span> Visit the website</span>
+            </Link>
+          )}
+          {project.sourceCodeLink && (
+            <Link to={project.sourceCodeLink} className="relative before:absolute mt-3 w-fit before:bottom-0 before:left-0 text-[20px] font-medium before:w-0 before:h-0.5 before:bg-white before:transition-width before:duration-300 tracking-wider before:ease-in-out before:content-[''] block hover:before:w-full">
+              <ArrowForwardIcon />
+              <span> Explore Source Code</span>
+            </Link>
+          )}
         </div>
       </div>
       <div>
