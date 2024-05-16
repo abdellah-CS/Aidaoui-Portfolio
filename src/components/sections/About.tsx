@@ -2,12 +2,10 @@ import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { services } from "../../constants";
-import { SectionWrapper, ResumeButton } from "../../hoc";
+import { SectionWrapper } from "../../hoc";
 import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
-import DownloadIcon from '@mui/icons-material/Download';
-import Button from '@mui/material/Button';
 
 interface IServiceCard {
   index: number;
