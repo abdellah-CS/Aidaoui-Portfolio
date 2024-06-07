@@ -24,7 +24,6 @@ import {
   docker,
   khadmoney,
   portfolio,
-  threejs,
   world,
   wordpress,
   apextech,
@@ -95,10 +94,6 @@ const technologiesOne: TTechnology[] = [
   {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
 ];
 
