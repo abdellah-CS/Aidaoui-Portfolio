@@ -46,6 +46,20 @@ import homework4 from "./homework4.png";
 import homework5 from "./homework5.png";
 import homework6 from "./homework6.png";
 import homework7 from "./homework7.png";
+import cf from "./cf.png";
+import cf1 from "./cf1.png";
+import cf2 from "./cf2.png";
+import cf3 from "./cf3.png";
+import cf4 from "./cf4.png";
+import cf5 from "./cf5.png";
+import cf6 from "./cf6.png";
+import cf7 from "./cf7.png";
+import cf8 from "./cf8.png";
+import cf9 from "./cf9.png";
+import cf10 from "./cf10.png";
+import cf11 from "./cf11.png";
+import cf12 from "./cf12.png";
+
 
 export {
   backend,
@@ -90,6 +104,19 @@ export {
   homework5,
   homework6,
   homework7,
+  cf,
+  cf1,
+  cf2,
+  cf3,
+  cf4,
+  cf5,
+  cf6,
+  cf7,
+  cf8,
+  cf9,
+  cf10,
+  cf11,
+  cf12,
   khadmoneyacademy,
   portfolio
 };
