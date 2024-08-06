@@ -46,7 +46,7 @@ import homework4 from "./homework4.png";
 import homework5 from "./homework5.png";
 import homework6 from "./homework6.png";
 import homework7 from "./homework7.png";
-import cf from "./cf.png";
+import cf from "./cf.jpeg";
 import cf1 from "./cf1.png";
 import cf2 from "./cf2.png";
 import cf3 from "./cf3.png";
