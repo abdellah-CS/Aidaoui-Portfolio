@@ -252,13 +252,13 @@ const projects: TProject[] = [
     sourceCodeLink: null,
   },
   {
-    image: khadmoneyacademy,
+    image: cf,
     name: "Crystal Fountain",
     category: "API Powered Frontend Website",
     description:
       "This 3D website showcases Crystal Fountain, a construction company specializing in fountains and related water features. The website features a modern design, interactive elements, and a user-friendly navigation system, highlighting the company's expertise and showcasing their impressive portfolio of completed projects.",
     techs: ["ReactJS", "TypeScript", "ThreeJS", "Tailwind CSS"],
-    websiteImages: [khadmoney1, khadmoney2, khadmoney3,khadmoney4, khadmoney5],
+    websiteImages: [cf1, cf2, cf3, cf4, cf5, cf6, cf7, cf8, cf9, cf10, cf11, cf12],
     client: "Khider Mohamed",
     websiteLink: "https://crystalfountain.dz",
     sourceCodeLink: null,
