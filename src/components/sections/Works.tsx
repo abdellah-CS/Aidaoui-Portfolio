@@ -12,7 +12,7 @@ const ProjectCard: React.FC<{ index: number; toggle: string }> = ({
   index,
 }) => {
   const project = projects[index];
-
+//single card
   if (!project) {
     return null;
   }
