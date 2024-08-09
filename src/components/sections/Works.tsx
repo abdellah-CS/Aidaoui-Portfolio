@@ -66,7 +66,8 @@ const Works = () => {
   // toggle === "All"
   //   ? projects
   //   : projects.filter((project) => project.category === toggle);
-    
+  console.log("Rendering Works component"); // Debug message
+
   return (
     <div className="sm:px-16">
       <Header useMotion={true} {...config.sections.works} />
@@ -81,7 +82,7 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-      {projects.map((_, index) => (
+        {projects.map((_, index) => (
           <ProjectCard
             key={`project-${index}`}
             index={index}
